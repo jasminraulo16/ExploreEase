@@ -1,0 +1,28 @@
+.search {
+    position: relative;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.search-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.suggestions {
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+.sub-suggestion {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
