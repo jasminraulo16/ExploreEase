@@ -1,28 +1,94 @@
-.search {
-    position: relative;
-    width: 500px;
-    margin: 0 auto;
+* {
+    margin: 0;
+    background-color: #a3ae97;
+    color: #780C28;
+    background-image: url("./images/imageTravel.jpg");
+    background-size: cover;
 }
+
+h1 {
+    color: #4e4242;
+}
+
+.search {
+    display: flex; 
+    justify-content: flex-end; /* Aligns to the right */
+    align-items: center; 
+    width: 100%; /* Use full width */
+    max-width: 500px; /* Set a max-width for large screens */
+     margin: 0 auto; /*Centers the search bar horizontally */
+    position: relative;
+    padding-right: 20px; /* Add some space from the right edge */
+    outline: none;
+    
+}
+
+
+@media (max-width: 768px) {
+    .search {
+        max-width: 100%; /* Take up full width on smaller screens */
+        justify-content: center;
+        padding-right:0; /* Less padding for small screens */
+    }
+}
+
 
 .search-input {
-    width: 100%;
+    width: 80%; 
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid;
     border-radius: 4px;
+    color: #4e4242;
+    font-size: 1em;
+    outline: none;
+    margin-left: 40px;
 }
 
+
+
+.add-button {
+    padding: 10px 20px;
+    background-color: #83957a;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px; 
+}
+
+.add-button:hover {
+    background-color: #636b59;
+}
 .suggestions {
-    border: 1px solid #ccc;
-    max-height: 150px;
+    max-height: 200px;
     overflow-y: auto;
-    background: #fff;
+    /* background: #fff; */
     position: absolute;
     width: 100%;
-    z-index: 1000;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    border-radius: 10px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    margin-top: 5px;
+    transition: box-shadow 0.3s ease;
 }
 
 .sub-suggestion {
-    padding: 8px;
-    border-bottom: 1px solid #ccc;
+    padding: 12px;
+    border-bottom: 1px solid;
     cursor: pointer;
+    color: #655252;
+    font-size: 1em;
+    border-radius: 8px; /* Rounded suggestion items */
+    transition: background-color 0.3s ease;
+}
+
+.sub-suggestion:hover {
+    background-color: #979f88; /* Highlight suggestion on hover */
+}
+.sub-suggestion:last-child {
+    border-bottom: none; /* Remove border for last suggestion */
 }

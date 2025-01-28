@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./SearchBar.css";
 import TimePopup from "./TimePopup/TimePopup";
+import imageTravel from "..Components/src/images/imageTravel.jpg";
 
 const SearchBar = () => {
   const [query, setQuery] = useState(""); // For user input
@@ -42,11 +43,18 @@ const SearchBar = () => {
   // Handle suggestion click
   const handleSuggestionClick = (suggestion) => {
     setQuery(suggestion.display_name); // Autofill the clicked suggestion
-    setSuggestions([]); // Clear suggestions
+    setSuggestions([]); 
   };
 
   return (
+
+     
     <div className="search" >
+         style={{
+        backgroundImage: `url(${imageTravel})`, // Using the imported image
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
       <input
         type="text"
         value={query}
@@ -67,7 +75,8 @@ const SearchBar = () => {
           </div>
         ))}
       </div>
-      {showPopup && <TimePopup closePopup={() => setShowPopup(false)} />}
+      {showPopup && <TimePopup closePopup={() => setShowPopup(false)} 
+        selectedPlace={query}/>}
     </div>
   );
 };

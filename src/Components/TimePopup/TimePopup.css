@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +12,8 @@
 }
 
 .popup-box {
-  background: white;
+   background-color: #a3ae97;
+
   border-radius: 8px;
   padding: 20px;
   text-align: center;
@@ -20,27 +21,37 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.time-input {
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+h3{
+  border-radius: 10px;
 }
+
+.time-input {
+  width: 95%;
+  padding: 8px;
+  margin-top: 10px;
+  border: 1px solid #4e4242;
+  border-radius: 4px;
+  outline: none;
+  color:black;
+  
+}
+
 
 .button-group {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-evenly;
   margin-top: 20px;
+ 
 }
 
 .submit-button {
   padding: 10px 20px;
-  background-color: #4caf50;
-  color: white;
+  background-color: #3caf40;
+  color: rgb(16, 14, 14);
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  border-radius: 30px;
 }
 
 .submit-button:hover {
@@ -49,13 +60,15 @@
 
 .cancel-button {
   padding: 10px 20px;
-  background-color: #f44336;
-  color: white;
+  background-color: #d80e00;
+  color: rgb(16, 14, 14);
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  border-radius: 30px;
 }
 
 .cancel-button:hover {
-  background-color: #e53935;
+  background-color: #be1f1c;
 }
+
