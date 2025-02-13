@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./SearchBar.css";
 import TimePopup from "./TimePopup/TimePopup";
-import imageTravel from "..Components/src/images/imageTravel.jpg";
+import imageTravel from "../images/imageTravel.jpg"; // Importing the image
+
 
 const SearchBar = () => {
   const [query, setQuery] = useState(""); // For user input
@@ -49,12 +50,13 @@ const SearchBar = () => {
   return (
 
      
-    <div className="search" >
+    <div className="search"
          style={{
         backgroundImage: `url(${imageTravel})`, // Using the imported image
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
+      >
       <input
         type="text"
         value={query}
