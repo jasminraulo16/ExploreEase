@@ -1,5 +1,6 @@
 import React from "react";
 import SearchBar from "./Components/SearchBar";
+import Destinations from "./Components/Places/Destinations";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <br></br>
       <h2>Search for a Place</h2>
       <SearchBar/>
+      <Destinations />
     </div>
   );
 }
