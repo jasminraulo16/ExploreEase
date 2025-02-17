@@ -1,6 +1,7 @@
 import React from "react";
 import SearchBar from "./Components/SearchBar";
 import Destinations from "./Components/Places/Destinations";
+// import Map from "./Components/Map/Map";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <h2>Search for a Place</h2>
       <SearchBar/>
       <Destinations />
+      {/* <Map /> */}
     </div>
   );
 }
